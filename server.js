@@ -14,6 +14,10 @@ app.get("/about", (req, res) => {
     res.send("I am a comp sci student, I love vodka and pork crackling");
 })
 
+app.get("/hobbies", (req, res) => {
+    res.send("<ul><li>Coffee</li><li>Code</li><li>Beer</li></ul>");
+});
+
 // port 0 --> random free assign
 const server = app.listen(0, function() {
     // log what port server is hosted on
