@@ -1,9 +1,18 @@
 const express = require("express");
 const app = express();
 
-app.get("/", function(request, response) {
-    response.send("<h1>Hello World!</h1>");
+app.get("/", function(req, res) {
+    res.send("<h1>Hello World!</h1>");
 });
+
+app.get("/contact", function(req, res) {
+    res.send("please contact me on mia123@example.com");
+});
+
+// tutorial task
+app.get("/about", (req, res) => {
+    res.send("I am a computer science student and I love fried chicken and pork crackling");
+})
 
 // port 0 --> random free assign
 const server = app.listen(0, function() {
