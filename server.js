@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
-app.listen(3000, function(){
-    console.log("server started on port 3000");
+
+// port 0 --> random free assign
+const server = app.listen(0, function() {
+    // log what port server is hosted on
+    console.log('Listening on port:', server.address().port);
 });
