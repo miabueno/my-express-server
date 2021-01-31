@@ -11,7 +11,7 @@ app.get("/contact", function(req, res) {
 
 // tutorial task
 app.get("/about", (req, res) => {
-    res.send("I am a computer science student and I love fried chicken and pork crackling");
+    res.send("I am a comp sci student, I love vodka and pork crackling");
 })
 
 // port 0 --> random free assign
