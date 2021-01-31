@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/miabueno/my-express-server/issues"
   },
-  "homepage": "https://github.com/miabueno/my-express-server#readme"
+  "homepage": "https://github.com/miabueno/my-express-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
